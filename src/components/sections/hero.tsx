@@ -44,7 +44,7 @@ const Hero = () => {
           </div>
           <div className="relative h-64 w-64 sm:h-80 sm:w-80 lg:h-96 lg:w-96 mx-auto md:mx-0">
             <Image
-              src="https://picsum.photos/400/400"
+              src="https://i.ibb.co/yBNtW8G/Whats-App-Image-2024-07-29-at-15-58-35-1.jpg"
               alt="Atharva Khond"
               width={400}
               height={400}
