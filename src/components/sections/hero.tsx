@@ -44,10 +44,11 @@ const Hero = () => {
           </div>
           <div className="relative h-64 w-64 sm:h-80 sm:w-80 lg:h-96 lg:w-96 mx-auto md:mx-0">
             <Image
-              src="/images/profile.png"
+              src="https://picsum.photos/400/400"
               alt="Atharva Khond"
               width={400}
               height={400}
+              data-ai-hint="profile picture"
               className="rounded-full object-cover border-4 border-primary/20 shadow-lg"
               priority
             />
