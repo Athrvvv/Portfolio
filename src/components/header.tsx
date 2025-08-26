@@ -33,7 +33,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2 font-bold text-xl text-foreground hover:text-primary transition-colors">
             <Code2 className="h-7 w-7 text-primary" />
-            <span>Khond's Canvas</span>
+            <span className="hidden sm:inline">Atharva Khond</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">
@@ -63,16 +63,18 @@ const Header = () => {
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <SheetContent side="right" className="w-[300px] sm:w-[400px] p-0">
                 <div className="flex flex-col h-full">
                   <div className="flex items-center justify-between p-4 border-b">
                     <Link href="/" className="flex items-center gap-2 font-bold text-lg" onClick={handleLinkClick}>
                       <Code2 className="h-6 w-6 text-primary" />
-                      <span>Khond's Canvas</span>
+                      <span>Atharva Khond</span>
                     </Link>
-                    <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
-                      <X className="h-6 w-6" />
-                    </Button>
+                    <SheetTrigger asChild>
+                      <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
+                        <X className="h-6 w-6" />
+                      </Button>
+                    </SheetTrigger>
                   </div>
                   <nav className="flex-1 flex flex-col items-center justify-center gap-8 py-8">
                     {navLinks.map((link) => (

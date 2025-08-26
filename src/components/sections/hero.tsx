@@ -6,14 +6,14 @@ import { contactDetails } from '@/lib/data';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative h-[calc(100vh-80px)] min-h-[600px] flex items-center">
+    <section id="home" className="relative h-auto min-h-[calc(100vh-80px)] flex items-center py-20 md:py-0">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 text-center md:text-left">
             <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary font-semibold rounded-full text-sm">
               Full-Stack Developer & AI Enthusiast
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter">
               Atharva Khond
             </h1>
             <p className="text-lg text-muted-foreground max-w-xl mx-auto md:mx-0">
@@ -42,7 +42,7 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-          <div className="relative h-80 w-80 lg:h-96 lg:w-96 mx-auto md:mx-0">
+          <div className="relative h-64 w-64 sm:h-80 sm:w-80 lg:h-96 lg:w-96 mx-auto md:mx-0">
             <Image
               src="https://picsum.photos/400/400"
               alt="Atharva Khond"

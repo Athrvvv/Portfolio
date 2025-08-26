@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2">
             <Code2 className="h-6 w-6 text-primary" />
-            <span className="font-bold text-lg">Khond's Canvas</span>
+            <span className="font-bold text-lg">Atharva Khond</span>
           </div>
           <p className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} Atharva Khond. All rights reserved.
